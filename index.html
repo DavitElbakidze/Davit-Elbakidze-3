@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div
+      style="
+        background-color: rgba(68, 169, 135, 0.509);
+        border-radius: 20px;
+        width: 50%;
+        margin: 0 auto;
+        padding: 20px;
+        text-align: center;
+      "
+    >
+      <form style="display: inline-block; text-align: left">
+        <label for="name">Full Name:</label>
+        <input
+          style="border-radius: 15px"
+          type="text"
+          placeholder="Full Name"
+          id="name"
+          required
+        />
+
+        <br />
+        <br />
+
+        <label for="phone">Phone:</label>
+        <input
+          style="border-radius: 15px"
+          type="tel"
+          placeholder="Phone"
+          id="phone"
+          required
+        />
+
+        <br />
+        <br />
+
+        <label for="email">Email:</label>
+        <input
+          style="border-radius: 15px"
+          type="email"
+          placeholder="email"
+          id="email"
+          required
+        />
+
+        <br />
+        <br />
+
+        <label style="border-radius: 15px" for="subject">Subject:</label>
+        <input
+          style="border-radius: 15px"
+          type="text"
+          placeholder="Subject"
+          id="subject"
+          required
+          minlength="3"
+          maxlength="100"
+        />
+
+        <br />
+        <br />
+
+        <label for="message">Message:</label>
+        <textarea
+          style="border-radius: 15px"
+          placeholder="Message"
+          id="message"
+          required
+          rows="5"
+          cols="40"
+        ></textarea>
+        <br />
+        <br />
+
+        <label>Preferred Contact Method:</label>
+        <br />
+        <label for="contactEmail">Email</label>
+        <input
+          type="radio"
+          id="contactEmail"
+          name="contactMethod"
+          value="Email"
+          checked
+        />
+        <input
+          type="radio"
+          id="contactPhone"
+          name="contactMethod"
+          value="Phone"
+        />
+        <label for="contactPhone">Phone</label><br /><br />
+
+        <br />
+        <br />
+
+        <label for="subscribe">Subscribe:</label>
+        <input type="checkbox" id="subscribe" required />
+
+        <br />
+        <br />
+
+        <label for="rate">Rate:</label>
+        <input type="range" id="rate" required min="1" max="10" value="10" />
+
+        <br />
+        <br />
+
+        <label for="color">Color:</label>
+        <input style="border-radius: 15px" type="color" id="color" required />
+
+        <br />
+        <br />
+
+        <label for="date">Visit Date:</label>
+        <input style="border-radius: 15px" type="date" id="date" required />
+
+        <br />
+        <br />
+        <input style="border-radius: 15px" type="submit" value="Submit" />
+        <br />
+        <br />
+      </form>
+      <br />
+      <a href="/page2.html" target="_blank">Go to Page 2</a>
+    </div>
+  </body>
+</html>
